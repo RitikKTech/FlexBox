@@ -1,0 +1,114 @@
+/*using css*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alatsi", sans-serif;
+    font-weight: 400;
+     font-style: normal;
+      
+}
+a{
+    text-decoration: none;
+    color : #000;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: #598392;
+    transition: all 0.5s;
+
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+ul li .sign-btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: #edede9;
+    font-weight: 700px;
+    border-radius: 50px;
+
+}
+
+main{
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-img{
+    width: 500px;
+    height: auto;
+}
+
+.left-box{
+    width: 30%;
+    margin-right: 15px;
+}
+
+.right-box{
+    margin-left: 50px;
+}
+
+main h1{
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+
+main h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: orange;
+    letter-spacing: 5px;
+}
+
+main p{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400px;
+    line-height: 23px;
+    margin: 20px 0;
+}
+
+.cta-btn{
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    font-weight: 700px;
+    border-radius: 50px;
+    cursor: pointer;
+}
